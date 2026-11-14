@@ -1,0 +1,41 @@
+/* footer.css */
+
+footer {
+    background-color: #2c7be5;
+    color: #fff;
+    padding: 25px 20px;
+    text-align: center;
+    font-family: 'Poppins', Arial, sans-serif;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+footer a {
+    color: #fffa;
+    text-decoration: none;
+    margin: 0 8px;
+    transition: color 0.3s, transform 0.2s;
+}
+
+footer a:hover {
+    color: #fff;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding: 20px 15px;
+        font-size: 13px;
+    }
+
+    footer a {
+        display: inline-block;
+        margin: 5px 6px;
+    }
+}

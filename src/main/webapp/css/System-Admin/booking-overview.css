@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(rgba(240, 248, 255, 0.3), rgba(224, 238, 255, 0.3)),
+    url("https://i0.wp.com/www.guyontheroad.com/wp-content/uploads/2022/09/image-4.jpeg?w=1500&ssl=1") no-repeat center center fixed;
+    background-size: cover;
+    color: #003366;
+    min-height: 100vh;
+}
+
+
+/* Headings */
+h2, h3 {
+    text-align: center;
+    color: #00509e;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+/* Table Styling */
+table {
+    border-collapse: collapse;
+    width: 95%;
+    margin: 20px auto;
+    background: transparent;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 8px rgba(0, 51, 102, 0.2);
+}
+
+table th {
+    background: #2c7be5;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    font-size: 15px;
+}
+
+table td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #e6f0ff;
+    font-size: 14px;
+    color: #003366;
+}
+
+/* Striped rows for readability */
+table tr {
+    background-color: rgba(100, 149, 237, 0.42);
+}
+
+/* Status Styles */
+.status-pending {
+    color: #856404;
+    background: #fff3cd;
+    padding: 4px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.status-confirmed {
+    color: #155724;
+    background: #d4edda;
+    padding: 4px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.status-cancelled {
+    color: #721c24;
+    background: #f8d7da;
+    padding: 4px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Buttons */
+.btn-confirm, .btn-cancel {
+    border: none;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: background 0.3s ease;
+    margin: 3px;
+}
+
+/* Confirm = Blue */
+.btn-confirm {
+    background-color: #2c7be5;
+}
+
+.btn-confirm:hover {
+    background-color: #1a5bb4;
+}
+
+/* Cancel = Red */
+.btn-cancel {
+    background-color: #e74c3c;
+}
+
+.btn-cancel:hover {
+    background-color: #c0392b;
+}
+
+/* No bookings message */
+p {
+    text-align: center;
+    color: #444;
+    font-style: italic;
+    margin-top: 20px;
+}

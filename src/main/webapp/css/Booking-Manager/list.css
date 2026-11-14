@@ -1,0 +1,208 @@
+/* === GENERAL PAGE STYLING === */
+body {
+    font-family: "Segoe UI", sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+h2, h3 {
+    color: #2c7be5;
+    text-align: center;
+}
+
+a {
+    color: #2c7be5;
+    text-decoration: none;
+}
+
+/* In dashboard.css or similar */
+.btn-receipt {
+    background-color: #28a745;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.btn-receipt:hover {
+    background-color: #218838;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.success, .error {
+    text-align: center;
+    padding: 0.8rem;
+    border-radius: 6px;
+    width: 50%;
+    margin: 0.5rem auto;
+}
+
+.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* === FILTER OPTIONS === */
+.filter-options {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.filter-options a {
+    margin: 0 0.6rem;
+    font-weight: 500;
+}
+
+/* === BOOKING CARD GRID === */
+.booking-card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.booking-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    padding: 1rem 1.5rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.booking-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+/* === CARD HEADER === */
+.booking-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.booking-card-header h4 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #2c7be5;
+}
+
+/* === STATUS TAGS === */
+.status {
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 0.25rem 0.6rem;
+    border-radius: 8px;
+    text-transform: capitalize;
+}
+
+.status.pending {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.status.confirmed {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.status.cancelled {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* === CARD BODY === */
+.booking-card-body p {
+    margin: 0.3rem 0;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+/* === CARD ACTIONS === */
+.booking-card-actions {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-top: 0.8rem;
+}
+
+.btn {
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    color: #fff;
+    transition: 0.2s ease;
+}
+
+.btn-confirm {
+    background-color: #28a745;
+}
+
+.btn-cancel {
+    background-color: #dc3545;
+}
+
+.btn-delete {
+    background-color: #6c757d;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+}
+
+/* === EXTRA STYLES === */
+.total-bookings {
+    margin: 1rem;
+    font-weight: 600;
+    text-align: right;
+    color: #333;
+}
+
+.no-bookings {
+    text-align: center;
+    color: #555;
+}
+
+.quick-actions {
+    max-width: 800px;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.quick-actions table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.quick-actions td {
+    padding: 1rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    margin: 0.5rem;
+}
+
+.quick-actions a {
+    color: #2c7be5;
+    font-weight: bold;
+}

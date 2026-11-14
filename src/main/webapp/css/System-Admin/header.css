@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(rgba(240, 248, 255, 0.3), rgba(224, 238, 255, 0.3)),
+    url("https://i0.wp.com/www.guyontheroad.com/wp-content/uploads/2022/09/image-4.jpeg?w=1500&ssl=1") no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    color: #003366;
+}
+
+header h1 {
+    text-align: center;
+    padding: 20px;
+    color: #00509e;
+    text-shadow: 1px 1px 3px rgba(255,255,255,0.8);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(44, 123, 229, 0.85); /* semi-transparent nav bar */
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(44, 123, 229, 0.95);
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li {
+    display: block;
+}

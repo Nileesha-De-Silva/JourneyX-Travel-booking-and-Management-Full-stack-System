@@ -1,0 +1,299 @@
+/* -----------------------------
+   Global Styles
+------------------------------ */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: url('https://www.pixelstalk.net/wp-content/uploads/images6/4K-Travel-Wallpaper-HD-Free-download.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* -----------------------------
+   Header
+------------------------------ */
+header {
+    background: rgba(44, 62, 80, 0.95);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    width: 100%;
+}
+
+header h1 {
+    color: #ffffff;
+    margin: 0;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+/* -----------------------------
+   Navigation
+------------------------------ */
+nav {
+    background: #2c3e50;
+    width: 100%;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: #34495e;
+    color: #ffffff;
+}
+
+/* Dropdown */
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #34495e;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    min-width: 180px;
+    z-index: 100;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li a {
+    padding: 10px;
+    color: #ecf0f1;
+}
+
+nav ul li ul li a:hover {
+    background: #2c3e50;
+}
+
+/* -----------------------------
+   Headings
+------------------------------ */
+h2, h3 {
+    color: #2c3e50;
+    text-align: center;
+    margin: 20px 0;
+    font-weight: 600;
+}
+
+/* -----------------------------
+   Tables
+------------------------------ */
+table {
+    width: 100%;
+    max-width: 800px;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px auto;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+th, td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    color: #333;
+    text-align: left;
+}
+
+th {
+    background: #2c3e50;
+    color: #fff;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+tr:hover {
+    background: #f1f1f1;
+}
+
+/* -----------------------------
+   Forms
+------------------------------ */
+textarea, select, input[type="text"], input[type="email"], input[type="password"], input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #fff;
+    color: #333;
+    margin: 10px 0;
+    box-sizing: border-box;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+textarea:focus, select:focus, input:focus {
+    outline: none;
+    border-color: #0077cc;
+    box-shadow: 0 0 5px rgba(0,119,204,0.5);
+}
+
+/* Buttons */
+input[type="submit"], input[type="reset"], button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #0077cc;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 10px 5px;
+    transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover, button:hover {
+    background: #005fa3;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* -----------------------------
+   Quick Actions (cards)
+------------------------------ */
+.quick-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.quick-action {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    flex: 1 1 200px;
+    max-width: 300px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.quick-action:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.quick-action h3 {
+    margin: 10px 0;
+    color: #2c3e50;
+}
+
+.quick-action a {
+    color: #0077cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.quick-action a:hover {
+    color: #005fa3;
+    text-decoration: underline;
+}
+
+/* -----------------------------
+   Messages
+------------------------------ */
+.success {
+    color: #2c7a3f;
+    text-align: center;
+    margin: 15px 0;
+    padding: 10px;
+    background: rgba(46, 204, 113, 0.2);
+    border-radius: 5px;
+}
+
+.error {
+    color: #c0392b;
+    text-align: center;
+    margin: 15px 0;
+    padding: 10px;
+    background: rgba(231, 76, 60, 0.2);
+    border-radius: 5px;
+}
+
+/* -----------------------------
+   Links & Paragraphs
+------------------------------ */
+a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #005fa3;
+    text-decoration: underline;
+}
+
+p {
+    text-align: center;
+    color: #333;
+}
+
+/* -----------------------------
+   Footer
+------------------------------ */
+footer {
+    background: rgba(44, 62, 80, 0.95);
+    padding: 20px;
+    text-align: center;
+    color: #ecf0f1;
+    margin-top: auto;
+}
+
+/* -----------------------------
+   Responsive
+------------------------------ */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 5px 0;
+    }
+    .quick-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+}

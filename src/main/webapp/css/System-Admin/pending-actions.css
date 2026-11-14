@@ -1,0 +1,62 @@
+/* =============================
+   Pending Actions Overview
+   ============================= */
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 25px 0 10px;
+    color: #2c7be5;
+}
+
+h3 {
+    margin: 20px auto 10px;
+    font-size: 1.3rem;
+    color: #444;
+    width: 95%;
+}
+
+/* Count Summary Table (top one) */
+table:first-of-type {
+    margin-bottom: 30px;
+}
+
+table:first-of-type td {
+    font-weight: 600;
+}
+
+/* Highlight counts with badges */
+table:first-of-type td:last-child {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 6px;
+    color: #fff;
+}
+
+/* Different colors per row */
+table:first-of-type tr:nth-child(2) td:last-child {
+    background: #f6c23e;   /* Pending Bookings */
+}
+
+table:first-of-type tr:nth-child(3) td:last-child {
+    background: #36b9cc;   /* Pending Payments */
+}
+
+table:first-of-type tr:nth-child(4) td:last-child {
+    background: #1cc88a;   /* Pending Refunds */
+}
+
+table:first-of-type tr:nth-child(5) td:last-child {
+    background: #e74a3b;   /* Unresolved Issues */
+}
+
+/* Recent Pending Actions Table */
+table:last-of-type td {
+    vertical-align: middle;
+}
+
+table:last-of-type tr td:nth-child(2) {
+    font-weight: bold;
+    color: #2c7be5;
+}

@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+}
+
+h2, h3 {
+    color: #2c3e50;
+    text-align: center;
+    margin: 20px 0;
+    font-weight: 600;
+}
+
+table {
+    width: 100%;
+    max-width: 600px;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    color: #333;
+    text-align: left;
+}
+
+th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+tr:hover {
+    background-color: #f1f5f9;
+}
+
+.status-pending {
+    color: #f39c12;
+    font-weight: bold;
+}
+
+.status-approved, .status-confirmed {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.status-rejected, .status-cancelled {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.status-card {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 25px;
+    margin: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    border: 1px solid #eee;
+}
+
+.status-icon {
+    font-size: 3em;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.status-pending .status-icon {
+    color: #f39c12;
+}
+
+.status-approved .status-icon,
+.status-confirmed .status-icon {
+    color: #27ae60;
+}
+
+.status-rejected .status-icon,
+.status-cancelled .status-icon {
+    color: #e74c3c;
+}
+
+.status-title {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.status-message {
+    color: #7f8c8d;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.success {
+    color: #27ae60;
+    text-align: center;
+    margin: 15px 0;
+    padding: 10px;
+    background: rgba(39, 174, 96, 0.1);
+    border-radius: 4px;
+}
+
+.error {
+    color: #e74c3c;
+    text-align: center;
+    margin: 15px 0;
+    padding: 10px;
+    background: rgba(231, 76, 60, 0.1);
+    border-radius: 4px;
+}
+
+a {
+    color: #4a90e2;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #3a7bc8;
+    text-decoration: underline;
+}

@@ -1,0 +1,230 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8fafc;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+h2, h3 {
+    color: #1a5bb4;
+}
+
+/* Alerts */
+.alert {
+    margin: 1rem 0;
+    padding: 0.8rem 1rem;
+    border-radius: 6px;
+    font-weight: 500;
+}
+.alert.success {
+    background: #d4edda;
+    color: #155724;
+}
+.alert.error {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+/* Filter Section */
+.filter-section {
+    background: #fff;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    margin-bottom: 2rem;
+}
+
+.filter-links a {
+    text-decoration: none;
+    color: #1a5bb4;
+    margin-right: 1rem;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.filter-links a:hover {
+    color: #0d3f91;
+}
+
+.filter-links .active {
+    border-bottom: 2px solid #2c7be5;
+}
+
+/* Payment Cards */
+.payment-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.payment-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 1rem 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease;
+}
+
+.payment-card:hover {
+    transform: translateY(-5px);
+}
+
+.payment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.payment-header h4 {
+    margin: 0;
+    color: #1a5bb4;
+}
+
+.status {
+    padding: 0.3rem 0.7rem;
+    border-radius: 6px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.status-pending {
+    background: #fff3cd;
+    color: #856404;
+}
+.status-approved {
+    background: #d4edda;
+    color: #155724;
+}
+.status-rejected {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+/* Buttons */
+.payment-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.btn {
+    border: none;
+    padding: 0.4rem 0.9rem;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn-approve {
+    background: #28a745;
+}
+.btn-reject {
+    background: #dc3545;
+}
+.btn-delete {
+    background: #f40a0a;
+}
+
+.btn-approve:hover { background: #218838; }
+.btn-reject:hover { background: #c82333; }
+.btn-delete:hover { background: #f40a0a; }
+
+/* Receipt Actions */
+.receipt-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid #eee;
+}
+
+.btn-receipt {
+    background: #17a2b8;
+    color: white;
+    border: none;
+    padding: 0.4rem 0.9rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn-send-receipt {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 0.4rem 0.9rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn-receipt:hover { background: #138496; }
+.btn-send-receipt:hover { background: #218838; }
+
+.btn-view-receipt {
+    background: #6f42c1;
+    color: white;
+    border: none;
+    padding: 0.4rem 0.9rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-view-receipt:hover { 
+    background: #5a32a3; 
+    color: white;
+    text-decoration: none;
+}
+
+.receipt-status, .receipt-sent {
+    color: #28a745;
+    font-weight: 600;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.no-actions {
+    color: #666;
+    font-style: italic;
+}
+
+/* Back Link */
+.back-link {
+    text-align: center;
+}
+
+.btn-back {
+    text-decoration: none;
+    background: #1a5bb4;
+    color: #fff;
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn-back:hover {
+    background: #134a8a;
+}

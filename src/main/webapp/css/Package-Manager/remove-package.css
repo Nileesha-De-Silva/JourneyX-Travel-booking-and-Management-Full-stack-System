@@ -1,0 +1,44 @@
+/* Remove card specific styling */
+.remove-card {
+    background-color: #fff5f5;
+    border: 1px solid #ffcccc;
+}
+
+/* Buttons for remove/cancel */
+.btn-remove {
+    padding: 8px 16px;
+    background-color: #ff4d4f;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-remove:hover {
+    background-color: #cc3a3f;
+    transform: scale(1.05);
+}
+
+.btn-cancel {
+    padding: 8px 16px;
+    background-color: #ccc;
+    color: #333;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-cancel:hover {
+    background-color: #999;
+    transform: scale(1.05);
+}
+
+/* Align form and link horizontally */
+.package-actions form,
+.package-actions a {
+    display: inline-block;
+}

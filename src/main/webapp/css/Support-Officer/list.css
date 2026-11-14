@@ -1,0 +1,100 @@
+.feedback-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.feedback-container h2 {
+    text-align: center;
+    color: #2c7be5;
+    margin-bottom: 20px;
+}
+
+.feedback-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.feedback-card {
+    background: #ffffff;
+    border: 1px solid #e1e5eb;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feedback-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.feedback-info h3 {
+    color: #1a5bb4;
+    margin-bottom: 10px;
+}
+
+.feedback-info p {
+    margin: 8px 0;
+    color: #333;
+}
+
+.btn-delete {
+    display: inline-block;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-delete:hover {
+    background-color: #b52a37;
+}
+
+.no-data {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: #6c757d;
+    font-style: italic;
+}
+
+.success-message,
+.error-message {
+    text-align: center;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.back-link {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.btn-back {
+    display: inline-block;
+    background: #2c7be5;
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.btn-back:hover {
+    background: #1a5bb4;
+}
